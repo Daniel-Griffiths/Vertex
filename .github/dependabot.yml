@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: phpstan/phpstan
+    versions:
+    - 0.12.70
+    - 0.12.71
+    - 0.12.73
+    - 0.12.74
+    - 0.12.75
+    - 0.12.76
+    - 0.12.77
+    - 0.12.78
+    - 0.12.79
+    - 0.12.80
+    - 0.12.81
+    - 0.12.82
+    - 0.12.83
+    - 0.12.84
+  - dependency-name: filp/whoops
+    versions:
+    - 2.10.0
+    - 2.11.0
+    - 2.12.0
+    - 2.9.2
